@@ -20,7 +20,7 @@ class MoviesPage extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        movies: state.movies
+        movies: state.moviesReducer
     }
 }
 

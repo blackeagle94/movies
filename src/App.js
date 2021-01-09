@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css'
 import { Link, Route } from 'react-router-dom';
 import MoviesPage from './components/pages/MoviesPage'
 
