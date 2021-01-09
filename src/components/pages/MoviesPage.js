@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-export class MoviesPage extends Component {
+class MoviesPage extends Component {
     render() {
         return (
             <div>
@@ -11,9 +11,11 @@ export class MoviesPage extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({
-    
-})
+const mapStateToProps = (state) => {
+    return {
+        movies: state.movies
+    }
+}
 
 const mapDispatchToProps = {
     
