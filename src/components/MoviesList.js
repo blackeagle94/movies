@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
 import PropTypes from "prop-types";
 
-class MoviesList extends Component {
-    render() {
+const MoviesList = (props) => {
+    
         return (
             <div>
                 Movies List Comp
             </div>
         )
-    }
+    
 }
 
-MoviesList.propsTypes = {}
+MoviesList.propsTypes = {
+    movies: PropTypes.array.isRequired
+}
 
 export default MoviesList
