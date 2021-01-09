@@ -9,12 +9,14 @@ class MoviesPage extends Component {
         movies: PropsTypes.array.isRequired
     }
 
+
+
     render() {
         console.log(this.props)
         return (
             <div>
                 <h2>Movies PAge</h2>
-                <MoviesList />
+                <MoviesList movies = {this.props.movies}/>
             </div>
         )
     }
