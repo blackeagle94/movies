@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { Link, Route } from 'react-router-dom';
 import MoviesPage from './components/pages/MoviesPage';
-import _ from 'lodash';
-
 import { Container, Divider, Grid, Header, Image, List, Menu, Segment, Visibility } from 'semantic-ui-react';
 import { menuStyle, fixedMenuStyle } from './components/helpers/styleHelper';
 
@@ -85,7 +83,7 @@ class App extends Component {
 							</Grid.Row>
 						</Grid>
 						<Divider inverted section />
-						<Image src="/https://react.semantic-ui.com/logo.png" centered size="mini" />
+						<Image src="https://react.semantic-ui.com/logo.png" centered size="mini" />
 						<List horizontal inverted divided link size="small">
 							<List.Item as="a" href="#">
 								Site Map
