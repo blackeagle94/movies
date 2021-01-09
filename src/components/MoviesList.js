@@ -5,7 +5,7 @@ class MoviesList extends Component {
     render() {
         return (
             <div>
-                
+                Movies List Comp
             </div>
         )
     }

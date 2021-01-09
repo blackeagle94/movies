@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropsTypes from 'prop-types'
+import MoviesList from '../MoviesList'
 
 class MoviesPage extends Component {
 
@@ -13,6 +14,7 @@ class MoviesPage extends Component {
         return (
             <div>
                 <h2>Movies PAge</h2>
+                <MoviesList />
             </div>
         )
     }
