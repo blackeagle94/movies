@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 const MoviesList = (movies) => {
 
     const emptyMessage = (<p>There are no movies yet.</p>)
-    const movisesList = (<div>{movies.error ? <h3>Error data!</h3> : <p>Hata Yok</p>}</div>)
-    console.log(movies.error)
+    const movisesList = (<div>{movies.movies.error.response ? <h3>Error data!</h3> : <p>Hata Yok</p>}</div>)
+    console.log(movies.movies.error)
 	return (
         <div>
             Movies List Comp
