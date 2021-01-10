@@ -1,4 +1,5 @@
 import { FETCH_MOVIES } from "../actions/moviesAction";
+import {FETCH_MOVIES_ERROR} from "../actions/moviesAction"
 
 const initialState = {
     fetching: false,
@@ -12,6 +13,9 @@ const initialState = {
 
     case FETCH_MOVIES:
         return { ...state, movies: action.payload }
+
+    case FETCH_MOVIES_ERROR:
+        return {...state, error: action.error}
 
     default:
         return state

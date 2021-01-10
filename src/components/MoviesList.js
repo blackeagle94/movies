@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 const MoviesList = (props) => {
 
     const emptyMessage = (<p>There are no movies yet.</p>)
-    const movisesList = (<div>Movies List</div>)
+    const movisesList = (<div>{}</div>)
+    console.log(props)
 	return (
         <div>
             Movies List Comp

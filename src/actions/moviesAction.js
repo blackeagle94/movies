@@ -2,6 +2,7 @@ import axios from 'axios'
 import { API_BASE } from "../config/env";
 
 export const FETCH_MOVIES = 'FETCH_MOVIES'
+export const FETCH_MOVIES_ERROR = 'FETCH_MOVIES_ERROR'
 
 export const fetchMovies = () => {
     return dispatch => {
@@ -11,6 +12,9 @@ export const fetchMovies = () => {
             type: FETCH_MOVIES,
             payload: data
         }))
-        .catch(error => console.log(error.message))
+        .catch(error => dispatch({
+            type: FETCH_MOVIES_ERROR,
+            payload: error
+        }))
     }
 }
