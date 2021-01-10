@@ -15,7 +15,7 @@ const initialState = {
         return { ...state, movies: action.payload }
 
     case FETCH_MOVIES_ERROR:
-        return {...state, error: action.error}
+        return {...state, error: action.payload}
 
     default:
         return state
