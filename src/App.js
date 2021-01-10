@@ -5,16 +5,13 @@ import MoviesPage from "./components/pages/MoviesPage";
 
 import {
   Container,
-  Divider,
-  Grid,
-  Header,
   Image,
-  List,
   Menu,
-  Segment,
   Visibility,
 } from "semantic-ui-react";
 import { menuStyle, fixedMenuStyle } from './components/helpers/styleHelper';
+import Footer from "./components/Footer";
+
 
 class App extends Component {
   state = {
@@ -65,6 +62,7 @@ class App extends Component {
           <br />
           <Route path="/movies" component={MoviesPage}></Route>
         </Container>
+		<Footer />
       </div>
     );
   }
