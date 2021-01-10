@@ -1,7 +1,21 @@
 import React, { Component } from 'react'
+import {
+    Container,
+    Image,
+    Menu,
+    Visibility
+  } from "semantic-ui-react";
+  import { menuStyle, fixedMenuStyle } from './helpers/styleHelper.js';
+  import { Link} from "react-router-dom";
 
 class Header extends Component {
+    state = {
+        menuFixed: null,
+        overlayFixed: null,
+      };
+
     render() {
+        const { menuFixed, overlayFixed, overlayRect } = this.state;
         return (
             <div>
                         <Visibility
