@@ -10,8 +10,9 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css'
 import logger from 'redux-logger'
+import reduxPromise from 'redux-promise-middleware'
 
-const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk,logger)));
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk,reduxPromise, logger)));
 
 ReactDOM.render(
 	<Router>
