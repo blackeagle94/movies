@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropsTypes from 'prop-types'
 import MoviesList from '../MoviesList'
+import { fetchMovies } from "../../actions/moviesAction";
 
 class MoviesPage extends Component {
 

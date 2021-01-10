@@ -1,14 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import {
-    Container,
-    Divider,
-    Grid,
-    Header,
-    Image,
-    List,
-    Segment,
-  } from "semantic-ui-react";
+import { Container, Divider, Grid, Header, Image, List, Segment, } from "semantic-ui-react";
 
 function Footer(props) {
     return (
@@ -83,9 +74,6 @@ function Footer(props) {
     )
 }
 
-Footer.propTypes = {
-
-}
 
 export default Footer
 
