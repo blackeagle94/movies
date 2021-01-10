@@ -10,7 +10,10 @@ class MoviesPage extends Component {
         movies: PropsTypes.array.isRequired
     }
 
-
+    componentDidMount() {
+        this.props.fetchMovies()
+    }
+    
 
     render() {
         console.log(this.props)
@@ -30,7 +33,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = {
-    
+    fetchMovies
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(MoviesPage)
