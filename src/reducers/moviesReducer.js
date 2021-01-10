@@ -1,7 +1,10 @@
 import { FETCH_MOVIES } from "../actions/moviesAction";
 
 const initialState = {
-    movies: []
+    fetching: false,
+    fetched: false,
+    movies: [],
+    error: {}
 }
 
  const moviesReducer = (state = initialState, action) => {
